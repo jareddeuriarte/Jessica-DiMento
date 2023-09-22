@@ -1,0 +1,111 @@
+
+
+/* Style for the accordion content (hidden by default) */
+.accordion-content {
+    display: none;
+
+}
+
+
+
+
+
+
+
+/* Style for the .mydiv container */
+.mydiv {
+    overflow: auto;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    scrollbar-width:thin; /* For Firefox */
+    scrollbar-color: #ccc transparent; /* For Firefox */
+}
+
+/* Style for the images inside the .mydiv container */
+.mydiv img {
+    max-height: 25em;
+    margin: .5em;
+}
+
+/* Style for the scrollbar track and thumb */
+.mydiv::-webkit-scrollbar {
+    width: 8px; /* Adjust scrollbar width */
+}
+
+.mydiv::-webkit-scrollbar-track {
+    background-color: transparent; /* Track background color */
+}
+
+.mydiv::-webkit-scrollbar-thumb {
+    background-color: #ccc; /* Thumb color */
+    border-radius: 4px; /* Rounded corners for the thumb */
+}
+
+
+
+
+/* Clicked (active) state of the accordion */
+.active {
+    display: block;
+    max-width: 75%;
+}
+
+
+/* Style for the accordion toggle button with text-only style */
+.accordion-toggle {
+    color: #333; /* Text color for the toggle text */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-align: left; /* Align the text to the left for a side navigation look */
+    display: block; /* Make the button a block-level element */
+    text-decoration: none; /* Remove underlines from the button text */
+    background: none; /* Remove background */
+    transition: color 0.3s; /* Add a color transition on hover */
+
+}
+
+/* Change text color on hover */
+.accordion-toggle:hover {
+    color: #555; /* Change text color on hover */
+}
+
+
+
+
+
+
+
+
+
+/* Default styles for larger screens */
+/* Your existing CSS for larger screens here */
+
+/* Media query for screens with a maximum width of 768px (typical iPad portrait) */
+@media (max-width: 768px) {
+    /* Responsive styles for portrait mode */
+}
+
+/* Media query for screens with a maximum width of 1024px (typical iPad landscape) */
+@media (max-width: 1024px) and (orientation: landscape) {
+    /* Responsive styles for landscape mode on tablets */
+}
+
+/* Media query for screens with a maximum width of 414px (typical iPhone 11 portrait) */
+@media (max-width: 414px) {
+    /* Responsive styles for portrait mode on smartphones */
+}
+
+/* Media query for screens with a maximum width of 812px (typical iPhone 11 landscape) */
+@media (max-width: 812px) and (orientation: landscape) {
+    /* Responsive styles for landscape mode on smartphones */
+}
+
+
+
+
+
+
+

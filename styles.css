@@ -1,0 +1,67 @@
+/* Style for the accordion container */
+.accordion {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style for the accordion toggle button */
+.accordion-toggle {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style for the accordion content (hidden by default) */
+.accordion-content {
+    display: none;
+}
+
+/* Style for the flex container inside the accordion */
+/* .flex-container {
+    display: flex;
+    flex-direction: row;
+} */
+
+
+.mydiv {
+
+    overflow: auto;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+
+}
+
+
+.mydiv img {
+    max-height: 25em;
+    margin: .5em;
+
+
+
+}
+
+
+
+/* Style for each flex item */
+.flex-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+/* Clicked (active) state of the accordion */
+.active {
+    display: block;
+    max-width: 75%;
+}
+
+
+
+
+
+
+
