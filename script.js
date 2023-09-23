@@ -1,25 +1,57 @@
-// Get all accordion toggles and content
-const toggles = document.querySelectorAll('.accordion-toggle');
-const contents = document.querySelectorAll('.accordion-content');
+const imageLinks = {
+    set1: [
+        'assets/travel/JDiMento_SpainFilm-19.jpeg',
+        'assets/travel/JDiMento_SpainFilm2023-12.jpeg',
+        'assets/travel/JDiMento_SpainFilm2023-65.jpeg',
 
-// Add click event listeners to each toggle button
-toggles.forEach((toggle, index) => {
-    toggle.addEventListener('click', () => {
-        // Toggle the active class to show/hide the content
-        contents[index].classList.toggle('active');
-    });
-});
+        'assets/travel/JDiMento_SpainFilm2023-98.jpeg',
 
+        'assets/travel/JDiMento_SpainFilm2023-117.jpeg',
+        'assets/travel/JDiMento_SpainFilm2023-182.jpeg',
 
 
-// SLIDESHOW
-const slideshowContainer = document.querySelector('.slideshow-container');
+  
+    ],
+    set2: [
+        'https://placehold.co/600x400',
+        'https://placehold.co/600x400',
+        'https://placehold.co/600x400',
+    ],
+    // Add more sets as needed
+};
 
-// Function to change the background image
-function changeBackground() {
-    slideshowContainer.style.backgroundImage = 'url("new-image.jpg")'; // Replace with your image URL
+
+const imageContainer = document.getElementById('imageContainer');
+
+// Function to generate images based on the selected link set
+function generateImages(linkSet) {
+    const images = imageLinks[linkSet];
+
+    if (images) {
+        // Clear existing images
+        imageContainer.innerHTML = '';
+
+        // Create and append image elements
+        images.forEach((src) => {
+            const img = document.createElement('img');
+            img.src = src;
+            imageContainer.appendChild(img);
+        });
+    } else {
+        console.error('Link set not found.');
+    }
 }
 
-// Call the function to change the background every 5 seconds (adjust as needed)
-setInterval(changeBackground, 5000);
+// Event listeners for anchor tags
+document.getElementById('linkSet1').addEventListener('click', (e) => {
+    e.preventDefault(); // Prevent the default link behavior
+    generateImages('set1');
+});
 
+document.getElementById('linkSet2').addEventListener('click', (e) => {
+    e.preventDefault(); // Prevent the default link behavior
+    generateImages('set2');
+});
+
+// Initial generation of images (optional)
+generateImages('set1');
