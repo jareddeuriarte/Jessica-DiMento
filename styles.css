@@ -87,3 +87,45 @@ font-size: 95%;
 }
 
 
+
+
+/* Media Query for Phones (up to 767px) */
+@media only screen and (max-width: 767px) {
+    /* Add your phone-specific CSS styles here */
+
+
+    .container img {
+        max-height: 16rem;
+        background-color: white;
+        padding: 1rem;
+        /* height: auto; */
+    }
+
+}
+
+/* Media Query for Tablets (768px to 1023px) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Add your tablet-specific CSS styles here */
+
+    .container img {
+        max-height: 15rem;
+        background-color: white;
+        padding: 2rem;
+        /* height: auto; */
+    }
+ 
+}
+
+/* Media Query for iPad Air in Landscape Mode (1024px to 1365px) */
+@media only screen and (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
+    /* Add your CSS styles for iPad Air in landscape mode here */
+    .container img {
+        max-height: 27rem;
+        background-color: white;
+        padding: 2rem;
+        /* height: auto; */
+    }
+}
+
+
+
