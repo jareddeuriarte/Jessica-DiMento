@@ -64,12 +64,14 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:45%;
+
 }
 
 .production-container p{
     text-align: center;
 
+line-height: 2rem;
+font-size: 95%;
 }
 
 .production-container h3{
