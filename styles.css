@@ -40,6 +40,11 @@ a {
     margin-top: 5rem;
 }
 
+.back{
+    font-size: 3rem;
+    padding: 1rem;
+}
+
 
 /* BIO */
 
@@ -95,7 +100,7 @@ font-size: 95%;
 
 
     .container img {
-        max-height: 16rem;
+        max-height: 18.5rem;
         background-color: white;
         padding: 1rem;
         /* height: auto; */
