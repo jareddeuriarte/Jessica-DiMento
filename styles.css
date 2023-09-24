@@ -1,16 +1,25 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #E9EDC9;
 }
 
 .container {
     display: flex;
-    justify-content: center;
     gap: 10px;
     overflow: auto;
-    width: 75%;
+    width: 95%;
 }
 
 img {
-    max-width: 35%;
-    height: auto;
+    max-height: 40rem;
+    /* height: auto; */
+}
+
+.flex-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    margin-top: 5rem;
+
 }
