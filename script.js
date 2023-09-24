@@ -158,3 +158,7 @@ document.getElementById('overviewLink').addEventListener('click', (e) => {
     e.preventDefault(); // Prevent the default link behavior
     generateImages('overview');
 });
+
+
+
+

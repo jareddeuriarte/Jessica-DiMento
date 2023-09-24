@@ -1,7 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+        color: #354F52;
     background-color: #E9EDC9;
+    height: 100vh;
 }
+
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+  }
+
+  a:hover{
+    /* background-color: #A4C3B2; */
+    text-decoration: underline;
+    text-decoration-color: #A4C3B2;
+  }
 
 .container {
     display: flex;
@@ -10,8 +25,10 @@ body {
     width: 95%;
 }
 
-img {
+.container img {
     max-height: 40rem;
+    background-color: white;
+    padding: 3rem;
     /* height: auto; */
 }
 
@@ -21,5 +38,50 @@ img {
     align-items: center;
     /* height: 100vh; */
     margin-top: 5rem;
+}
+
+
+/* BIO */
+
+.bio-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 55%;
+}
+
+.bio-container img{
+    max-height: 10rem;
+}
+
+
+/* PRODUCTION */
+
+
+
+
+.production-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:45%;
+}
+
+.production-container p{
+    text-align: center;
 
 }
+
+.production-container h3{
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+.production-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
