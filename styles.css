@@ -29,7 +29,7 @@ a:hover {
 }
 
 .container img {
-    max-width: 45rem;
+    max-width: 30rem;
     /* max-height: 40rem; */
     background-color: white;
     padding: 3rem;
@@ -146,7 +146,7 @@ a:hover {
 
 
     .container img {
-        max-height: 18.5rem;
+        max-width: 17rem;
         background-color: white;
         padding: 1rem;
         /* height: auto; */
@@ -163,7 +163,7 @@ a:hover {
     /* Add your tablet-specific CSS styles here */
 
     .container img {
-        max-height: 15rem;
+        max-width: 25rem;
         background-color: white;
         padding: 2rem;
         /* height: auto; */
@@ -176,7 +176,7 @@ a:hover {
 
     /* Add your CSS styles for iPad Air in landscape mode here */
     .container img {
-        max-height: 27rem;
+        max-width: 27rem;
         background-color: white;
         padding: 2rem;
         /* height: auto; */
