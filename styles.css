@@ -7,6 +7,11 @@ body {
     height: 100vh;
 }
 
+.link-container {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
 a {
     color: inherit;
     /* blue colors for links too */
@@ -52,7 +57,7 @@ a:hover {
 
 /* BIO */
 
-.bio-wrapper{
+.bio-wrapper {
     display: flex;
     justify-content: center;
 }
@@ -60,7 +65,7 @@ a:hover {
 .bio-container {
     display: flex;
     flex-direction: row;
-    width: 45%;
+    width: 40%;
     align-items: center;
     margin-top: 3rem;
     background-color: #FEFAE0;
@@ -69,16 +74,6 @@ a:hover {
 
 
 
-}
-
-#logo{
-    max-height: 3.5rem;
-    padding: .5rem;
-}
-
-#jess{
-    padding: 2rem;
-    max-height: 17rem;
 }
 
 .bio-details {
@@ -91,9 +86,20 @@ a:hover {
 
 
 .bio-details p {
-
+    font-size: 95%;
     text-align: justify;
 
+
+}
+
+#jess {
+    padding: 1rem;
+    max-height: 11rem;
+
+}
+
+#logo {
+    max-height: 2.5rem;
 
 }
 
@@ -133,23 +139,6 @@ a:hover {
 
 .portrait {
     max-height: 500rem;
-}    .bio-details p {
-    font-size: 60%;
-
-    text-align: justify;
-
-
-}
-
-#jess{
-    padding: 1rem;
-    max-height: 11rem;
-
-}
-
-#logo{
-    max-height: 2.5rem;
-
 }
 
 
@@ -157,26 +146,71 @@ a:hover {
 
 
 
-/* Media Query for Phones */
-@media only screen and (max-width: 414px) {
+
+
+
+/* Media Query for Phones in Portrait */
+@media only screen and (max-width: 500px) {
     /* Add your phone-specific CSS styles here */
 
-    .container img{
+    .container img {
         max-width: 17rem;
         background-color: white;
         padding: 1rem;
     }
 
-
-
-        #jess{
-            display: none;
-   
+    /* BIO */
+    .bio-container {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        align-items: center;
+        margin-top: 3rem;
+        background-color: #FEFAE0;
+        padding: 2rem;
+        /* box-shadow: inset 0 0 10px #bdb9a2; */
     
-        }
     
-     
+
     }
+
+    .bio-details p {
+        font-size: 81%;
+        text-align: justify;
+    
+    
+    }
+
+
+    #jess {
+        display: none;
+
+
+    }
+
+
+    .production-container p {
+        text-align: center;
+        line-height: 1.5rem;
+        font-size: 55%;
+
+    }
+
+    .production-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #FEFAE0;
+        padding: 0rem;
+
+
+    }
+
+}
+
+
+
 
 
 
@@ -199,22 +233,22 @@ a:hover {
         font-size: 60%;
 
         text-align: justify;
-    
-    
+
+
     }
 
-    #jess{
+    #jess {
         padding: 1rem;
         max-height: 11rem;
 
     }
 
-    #logo{
+    #logo {
         max-height: 2.5rem;
 
     }
 
-    
+
 
 
 }
