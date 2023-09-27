@@ -133,6 +133,23 @@ a:hover {
 
 .portrait {
     max-height: 500rem;
+}    .bio-details p {
+    font-size: 60%;
+
+    text-align: justify;
+
+
+}
+
+#jess{
+    padding: 1rem;
+    max-height: 11rem;
+
+}
+
+#logo{
+    max-height: 2.5rem;
+
 }
 
 
@@ -140,19 +157,28 @@ a:hover {
 
 
 
-/* Media Query for Phones (up to 767px) */
-@media only screen and (max-width: 767px) {
+/* Media Query for Phones */
+@media only screen and (max-width: 414px) {
     /* Add your phone-specific CSS styles here */
 
-
-    .container img {
+    .container img{
         max-width: 17rem;
         background-color: white;
         padding: 1rem;
-        /* height: auto; */
     }
 
-}
+
+
+        #jess{
+            display: none;
+   
+    
+        }
+    
+     
+    }
+
+
 
 
 
@@ -168,6 +194,28 @@ a:hover {
         padding: 2rem;
         /* height: auto; */
     }
+
+    .bio-details p {
+        font-size: 60%;
+
+        text-align: justify;
+    
+    
+    }
+
+    #jess{
+        padding: 1rem;
+        max-height: 11rem;
+
+    }
+
+    #logo{
+        max-height: 2.5rem;
+
+    }
+
+    
+
 
 }
 
