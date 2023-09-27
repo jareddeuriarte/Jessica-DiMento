@@ -79,12 +79,12 @@ const imageLinks = {
     set3: [
        
       
-        'assets/still/Image_09.jpeg',
+        'assets/still/test.jpeg',
         'assets/still/WallLight-20.jpeg',
+        'assets/still/Image_09.jpeg',
         'assets/still/ZeiselDivider_Black-7.jpeg',
         'assets/still/ZeiselDivider_Black.jpeg',
         'assets/still/ZeiselDivider_white.jpeg',
-        'assets/still/test.jpeg',
         'assets/still/CWG1.jpeg',
         'assets/still/CWG2.jpeg',
 
@@ -94,7 +94,7 @@ const imageLinks = {
 
 
     overview: [  // Add an "overview" set of images
-        'assets/overview/flowers.jpeg',
+        'assets/overview/flowers-portrait.jpeg',
         'assets/overview/JessicaDiMento_OurVinyl_OS-61.jpeg',
         'assets/overview/Production_.jpeg',
     ],
@@ -161,4 +161,24 @@ document.getElementById('overviewLink').addEventListener('click', (e) => {
 
 
 
+
+// Function to add the "portrait" class to img elements with "portrait" in src
+function addPortraitClass() {
+    // Get all the img elements on the page
+    const imgElements = document.querySelectorAll('img');
+
+    // Loop through each img element
+    imgElements.forEach((img) => {
+        const src = img.getAttribute('src');
+        
+        // Check if the src attribute contains the word "portrait"
+        if (src.includes('portrait')) {
+            // Add the "portrait" class to the img element
+            img.classList.add('portrait');
+        }
+    });
+}
+
+// Call the function to add the class
+addPortraitClass();
 

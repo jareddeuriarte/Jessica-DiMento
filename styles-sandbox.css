@@ -1,50 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+
+
 body {
     font-family: 'Roboto', sans-serif;
-    color: #354F52;
+        color: #354F52;
     background-color: #E9EDC9;
     height: 100vh;
+
+    margin:0%;
 }
 
 a {
-    color: inherit;
-    /* blue colors for links too */
-    text-decoration: inherit;
-    /* no underline */
-}
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+  }
 
-a:hover {
+  a:hover{
     /* background-color: #A4C3B2; */
     text-decoration: underline;
     text-decoration-color: #A4C3B2;
-}
+  }
 
 .container {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
     overflow: auto;
-    /* width: 95%; */
+    width: 100%;
 }
 
 .container img {
-    max-width: 45rem;
-    /* max-height: 40rem; */
-    background-color: white;
-    padding: 3rem;
+    max-height: 100vh;
+
     /* height: auto; */
 }
 
-.flex-wrapper {
-    display: flex;
+.flex-wrapper{
+    /* display: flex;
     justify-content: center;
-    align-items: center;
-    /* height: 100vh; */
-    margin-top: 5rem;
+    align-items: center; */
+
+    /* margin-top: 5rem; */
 }
 
-.back {
+.back{
     font-size: 3rem;
     padding: 1rem;
 }
@@ -52,90 +50,48 @@ a:hover {
 
 /* BIO */
 
-.bio-wrapper{
+.bio-container{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    width: 55%;
 }
 
-.bio-container {
-    display: flex;
-    flex-direction: row;
-    width: 45%;
-    align-items: center;
-    margin-top: 3rem;
-    background-color: #FEFAE0;
-    padding: 2rem;
-    /* box-shadow: inset 0 0 10px #bdb9a2; */
-
-
-
-}
-
-#logo{
-    max-height: 3.5rem;
-    padding: .5rem;
-}
-
-#jess{
-    padding: 2rem;
-    max-height: 17rem;
-}
-
-.bio-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: justify;
-
-}
-
-
-.bio-details p {
-
-    text-align: justify;
-
-
+.bio-container img{
+    max-height: 10rem;
 }
 
 
 /* PRODUCTION */
 
-.production-container {
+
+
+
+.production-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #FEFAE0;
-    padding: 2rem;
-
 
 }
 
-.production-container p {
+.production-container p{
     text-align: center;
 
-    line-height: 2rem;
-    font-size: 95%;
+line-height: 2rem;
+font-size: 95%;
 }
 
-.production-container h3 {
+.production-container h3{
     text-align: center;
     text-decoration: underline;
 
 }
 
-.production-wrapper {
+.production-wrapper{
     display: flex;
     justify-content: center;
     margin-top: 3rem;
 }
-
-
-.portrait {
-    max-height: 500rem;
-}
-
-
 
 
 
@@ -146,39 +102,35 @@ a:hover {
 
 
     .container img {
-        max-height: 18.5rem;
+        /* max-height: 18.5rem;
         background-color: white;
-        padding: 1rem;
+        padding: 1rem; */
         /* height: auto; */
     }
 
 }
-
-
-
-
 
 /* Media Query for Tablets (768px to 1023px) */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     /* Add your tablet-specific CSS styles here */
 
     .container img {
-        max-height: 15rem;
+        /* max-height: 15rem;
         background-color: white;
-        padding: 2rem;
+        padding: 2rem; */
         /* height: auto; */
     }
-
+ 
 }
 
 /* Media Query for iPad Air in Landscape Mode (1024px to 1365px) */
 @media only screen and (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
-
     /* Add your CSS styles for iPad Air in landscape mode here */
     .container img {
-        max-height: 27rem;
+        /* max-height: 27rem;
         background-color: white;
-        padding: 2rem;
+        padding: 2rem; */
         /* height: auto; */
     }
 }
+
