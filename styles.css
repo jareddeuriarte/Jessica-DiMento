@@ -120,14 +120,12 @@ a:hover {
 }
 
 .bio-container {
+    width: 75%;
     display: flex;
-    flex-direction: row;
-    width: 40%;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 3rem;
     background-color: #FEFAE0;
     padding: 2rem;
-    /* box-shadow: inset 0 0 10px #bdb9a2; */
 
 
 
@@ -136,22 +134,23 @@ a:hover {
 .bio-details {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     text-align: justify;
 
 }
 
 
 .bio-details p {
-    font-size: 95%;
+    font-size: 80%;
     text-align: justify;
+    line-height: 170%;
 
 
 }
 
 #jess {
-    padding: 1rem;
-    max-height: 11rem;
+    max-height: 25rem;
+    margin-right: 1rem;
 
 }
 
