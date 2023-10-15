@@ -113,7 +113,6 @@ a:hover {
 
 
 /* BIO */
-
 .bio-wrapper {
     display: flex;
     justify-content: center;
@@ -168,16 +167,18 @@ a:hover {
     justify-content: center;
     align-items: center;
     background-color: #FEFAE0;
-    padding: 2rem;
+    padding: 1rem;
 
 
 }
 
 .production-container p {
-    text-align: center;
 
-    line-height: 2rem;
-    font-size: 95%;
+    font-size: 75%;
+    text-align: center;
+    line-height: 300%;
+    
+
 }
 
 .production-container h3 {
