@@ -210,8 +210,8 @@ a:hover {
 
 /* Media Query for Phones in Portrait */
 @media only screen and (max-width: 500px) {
-    /* Add your phone-specific CSS styles here */
-
+   
+    /* Image containers */
     .container img {
         max-width: 17rem;
         background-color: white;
@@ -240,18 +240,32 @@ a:hover {
     
     }
 
-
     #jess {
         display: none;
 
 
     }
 
+    /* PRODUCTION */
+
+    .production-wrapper {
+        display: flex;
+        justify-content: center;
+        margin: 1rem;
+    }
+
+    .production-container h3 {
+        font-size: 95%;
+        text-align: center;
+        text-decoration: underline;
+    
+    }
+
 
     .production-container p {
+        font-size: 75%;
         text-align: center;
-        line-height: 1.5rem;
-        font-size: 55%;
+        line-height: 280%;
 
     }
 
@@ -261,7 +275,7 @@ a:hover {
         justify-content: center;
         align-items: center;
         background-color: #FEFAE0;
-        padding: 0rem;
+        padding: .5rem;
 
 
     }
