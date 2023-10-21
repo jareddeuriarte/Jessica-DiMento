@@ -256,6 +256,7 @@ a:hover {
     align-items: center;
 
 
+
 }
 
 
@@ -285,6 +286,7 @@ a:hover {
     display: flex;
     justify-content: center;
     margin-top: 3rem;
+    margin-bottom: 7rem;
 }
 
 
@@ -381,46 +383,6 @@ a:hover {
 
 
     }
-
-    /* PRODUCTION */
-
-    .production-wrapper {
-        display: flex;
-        justify-content: center;
-        margin: 1rem;
-    }
-
-    .production-container h3 {
-        font-size: 95%;
-        text-align: center;
-        text-decoration: underline;
-
-    }
-
-
-    .production-container p {
-        font-size: 75%;
-        text-align: center;
-        line-height: 280%;
-
-    }
-
-    .production-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: .5rem;
-
-
-    }
-
-}
-
-
-
-
-
 
 
 
