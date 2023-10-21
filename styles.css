@@ -1,12 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@300&display=swap');
 
+
+
+
+body {
+    margin: 0;
+    font-family: 'Roboto Slab', sans-serif;
+
+}
+
 #splash-body {
- 
+
     font-family: 'Roboto Slab', sans-serif;
     color: #354F52;
     background-color: #E9EDC9;
-    
+
 
 
 
@@ -21,7 +30,7 @@
 }
 
 
-#splash-logo{
+#splash-logo {
     max-height: 3rem;
 }
 
@@ -35,6 +44,8 @@
 
 /* Style the dropdown container */
 .dropdown {
+    font-family: 'Roboto Slab', sans-serif;
+    color: #354F52;
     position: relative;
     display: inline-block;
 }
@@ -63,6 +74,9 @@
     display: block;
 }
 
+
+
+
 /* Change color of links on hover */
 .dropdown-content a:hover {
     /* background-color: #ddd; */
@@ -75,30 +89,6 @@
 
 /* SPLASH */
 
-
-
-
-
-/* .splash-body {
-    margin: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: #d5e4b2;
-    display: flex;
-    justify-content: space-around;
-
-} */
-
-
-
-
-
-
-
-
-
-
-
 .splash-flex {
     display: flex;
     height: 100vh;
@@ -106,24 +96,20 @@
     justify-content: center;
     align-items: center;
     justify-content: center;
-    
-
 }
 
-.splash-flex h1{
+.splash-flex h1 {
     margin-right: 5rem;
 }
 
 
 
 
-.photo-prod-flex{
+.photo-prod-flex {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-
 
 
 .splash-flex p {
@@ -134,7 +120,6 @@
 .photo-prod-flex a {
     text-decoration: inherit;
     text-align: center;
-
 }
 
 .photo-prod-flex a:hover {
@@ -145,16 +130,72 @@
 }
 
 
+/* SUPER 8 */
+
+.super8-wrapper {
+
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:rgba(255, 255, 255, 0.46); 
+}
+
+img {
+    /* height: 100vh; */
+    width: 100%;
+}
+
+
+.img-wrapper {
+    margin: 0;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+
+.img-wrapper h1 {
+
+
+text-decoration: underline;
+
+
+}
+
+
+.top-right {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* OVERVIEW */
 
 .link-container {
+    z-index: 100;
+    position: absolute;
+    width: 100%;
     margin-top: 1rem;
     margin-left: 1rem;
+    font-family: 'Roboto Slab', sans-serif;
+    color: #354F52;
 }
 
 
-.link-container > * {
+.link-container>* {
     padding: 2rem;
 }
 
@@ -272,13 +313,13 @@ a:hover {
 }
 
 
-.production-container img{
+.production-container img {
     max-height: 8rem;
 }
 
 .production-container h3 {
     font-family: 'Roboto Slab', sans-serif;
-  
+
     text-align: center;
 }
 
@@ -308,7 +349,8 @@ a:hover {
 }
 
 .carousel-slide {
-    flex: 0 0 25%; /* Display 4 slides at a time; adjust for 3 slides */
+    flex: 0 0 25%;
+    /* Display 4 slides at a time; adjust for 3 slides */
 }
 
 .carousel img {
@@ -316,7 +358,8 @@ a:hover {
     height: auto;
 }
 
-.prev, .next {
+.prev,
+.next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -388,49 +431,49 @@ a:hover {
 
 
 
-/* Media Query for Tablets (768px to 1023px) */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    /* Add your tablet-specific CSS styles here */
+    /* Media Query for Tablets (768px to 1023px) */
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        /* Add your tablet-specific CSS styles here */
 
-    .container img {
-        max-width: 25rem;
-        background-color: white;
-        padding: 2rem;
-        /* height: auto; */
+        .container img {
+            max-width: 25rem;
+            background-color: white;
+            padding: 2rem;
+            /* height: auto; */
+        }
+
+        .bio-details p {
+            font-size: 60%;
+
+            text-align: justify;
+
+
+        }
+
+        #jess {
+            padding: 1rem;
+            max-height: 11rem;
+
+        }
+
+        #logo {
+            max-height: 2.5rem;
+
+        }
+
+
+
+
     }
 
-    .bio-details p {
-        font-size: 60%;
+    /* Media Query for iPad Air in Landscape Mode (1024px to 1365px) */
+    @media only screen and (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
 
-        text-align: justify;
-
-
+        /* Add your CSS styles for iPad Air in landscape mode here */
+        .container img {
+            max-width: 27rem;
+            background-color: white;
+            padding: 2rem;
+            /* height: auto; */
+        }
     }
-
-    #jess {
-        padding: 1rem;
-        max-height: 11rem;
-
-    }
-
-    #logo {
-        max-height: 2.5rem;
-
-    }
-
-
-
-
-}
-
-/* Media Query for iPad Air in Landscape Mode (1024px to 1365px) */
-@media only screen and (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
-
-    /* Add your CSS styles for iPad Air in landscape mode here */
-    .container img {
-        max-width: 27rem;
-        background-color: white;
-        padding: 2rem;
-        /* height: auto; */
-    }
-}
