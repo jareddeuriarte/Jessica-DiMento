@@ -139,10 +139,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color:rgba(255, 255, 255, 0.46); 
+    color: rgba(255, 255, 255, 0.46);
 }
 
-img {
+.super8-wrapper img {
     /* height: 100vh; */
     width: 100%;
 }
@@ -159,7 +159,7 @@ img {
 .img-wrapper h1 {
 
 
-text-decoration: underline;
+    text-decoration: underline;
 
 
 }
@@ -211,34 +211,78 @@ a:hover {
     text-decoration-color: #A4C3B2;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    overflow: auto;
-    /* width: 95%; */
-}
 
-.container img {
-    max-width: 30rem;
-    /* max-height: 40rem; */
-    background-color: white;
-    padding: 3rem;
-    /* height: auto; */
-}
 
-.flex-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* height: 100vh; */
-    margin-top: 5rem;
-}
+
 
 .back {
     font-size: 3rem;
     padding: 1rem;
 }
+
+
+/* CAROUSEL */
+
+
+
+.carousel-wrapper {
+
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    max-width: 90%;
+
+}
+
+
+
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s;
+}
+
+.carousel-slide {
+    flex: 0 0 33.33%;
+    /* Display 3 images at a time */
+    padding: 5px;
+    /* Add spacing between images */
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.prev,
+.next {
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    /* color: black; */
+    font-size: 24px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+
+
 
 
 /* BIO */
@@ -327,6 +371,7 @@ a:hover {
     display: flex;
     justify-content: center;
     margin-top: 3rem;
+
     margin-bottom: 7rem;
 }
 
@@ -337,26 +382,13 @@ a:hover {
 
 /* carousel */
 
-.carousel-container {
-    position: relative;
-    max-width: 100%;
-    overflow: hidden;
+img {
+    padding: 2rem;
 }
 
-.carousel {
-    display: flex;
-    transition: transform 0.5s;
-}
 
-.carousel-slide {
-    flex: 0 0 25%;
-    /* Display 4 slides at a time; adjust for 3 slides */
-}
 
-.carousel img {
-    width: 100%;
-    height: auto;
-}
+
 
 .prev,
 .next {
