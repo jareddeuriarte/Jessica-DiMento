@@ -18,12 +18,6 @@ body {
 }
 
 
-
-
-
-
-
-
 /* DROP DOWN */
 
 /* Style the dropdown container */
@@ -104,9 +98,6 @@ body {
     margin-right: 5rem;
 }
 
-
-
-
 .photo-prod-flex {
     display: flex;
     flex-direction: column;
@@ -176,24 +167,9 @@ body {
 
 
 
-
-
-
-
-
-
-
-
 /* OVERVIEW */
 
 /* LOGO */
-
-
-
-
-
-
-
 
 .link-container {
     z-index: 100;
@@ -224,10 +200,6 @@ a:hover {
     text-decoration-color: #A4C3B2;
 }
 
-
-
-
-
 .back {
     font-size: 3rem;
     padding: 1rem;
@@ -236,70 +208,57 @@ a:hover {
 
 /* CAROUSEL */
 
-
-
-.carousel-wrapper {
-    /* margin-top: 5rem; */
-
+.scroll-flex-wrapper{
     display: flex;
-    align-items: center;
+    justify-content: center;
     height: 100vh;
-    max-width: 100%;
+    align-items: center;
 
 }
 
-
-.carousel-container {
+/* Styling for the scrollable container */
+.scroll-container {
     display: flex;
-    overflow: hidden;
-    position: relative;
+    width: 90%;
+    overflow-y: scroll; /* Enable vertical scrolling */
+    border: 1px solid #ccc; /* Add a border for visual clarity */
+    padding: 10px; /* Add padding if needed */
   }
   
-  .carousel {
-    display: flex;
-    transition: transform 0.5s;
+  /* Styling for the custom scrollbar */
+  .scroll-container::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
   }
   
-  .carousel-slide {
-    flex: 0 0 calc(100% / 3); /* Display 3 images at a time; adjust for your preference */
-    padding: 5px; /* Add spacing between images */
+  .scroll-container::-webkit-scrollbar-thumb {
+    background-color: #888; /* Set the color of the scrollbar thumb */
+    border-radius: 5px; /* Optional: Add rounded corners to the thumb */
   }
   
-  .carousel img {
-    width: 100%;
-    height: auto;
+  .scroll-container::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Set the color of the scrollbar track */
   }
   
-  .prev, .next {
-    background: transparent;
-    color: rgba(0, 0, 0, 0.5); /* Change the color as needed */
-    font-size: 24px;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
+  /* Optional: Hover effect for the scrollbar thumb */
+  .scroll-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
   }
-  
-  .prev::before {
-    content: '\2039'; /* Plain ‹ symbol for "Previous" */
-  }
-  
-  .next::before {
-    content: '\203A'; /* Plain › symbol for "Next" */
+
+
+  .scroll-container img {
+    max-height: 30rem;
+
+    
   }
   
 
-  
-
-
-
-
-
 
 
   
+
+  
+
+
 
 
 /* BIO */

@@ -1,0 +1,54 @@
+/* CAROUSEL */
+
+.carousel-wrapper {
+    /* margin-top: 5rem; */
+
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    max-width: 100%;
+
+}
+
+
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s;
+  }
+  
+  .carousel-slide {
+    flex: 0 0 calc(100% / 3); /* Display 3 images at a time; adjust for your preference */
+    padding: 5px; /* Add spacing between images */
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .prev, .next {
+    background: transparent;
+    color: rgba(0, 0, 0, 0.5); /* Change the color as needed */
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  
+  .prev::before {
+    content: '\2039'; /* Plain ‹ symbol for "Previous" */
+  }
+  
+  .next::before {
+    content: '\203A'; /* Plain › symbol for "Next" */
+  }
+  

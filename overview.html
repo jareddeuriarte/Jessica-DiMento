@@ -5,8 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+
+  
+
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="glider.css">
+
+
+    <!-- OWL -->
+
+    <link content="text/css" rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link content="text/css" rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
 
     <title>Jess DiMento</title>
 </head>
@@ -14,19 +24,25 @@
 <body>
 
 
-
-
-
-
-
-
     <div class="link-container">
 
 
-        <a href="bio.html">
+        <a href="index.html">
             <img id="logo" src="/assets/bio/logo-black.png" alt="image of artist"></img>
 
         </a>
+
+
+        <div class="dropdown">
+            <a class="dropdown-button">Photography</a>
+            <div class="dropdown-content">
+                <a href="#">Events</a>
+                <a href="#">Music</a>
+                <a href="#">Portraits</a>
+                <a href="#">Still</a>
+                <a href="#">Travel</a>
+            </div>
+        </div>
 
 
 
@@ -34,9 +50,9 @@
         <div class="dropdown">
             <a class="dropdown-button">Projects</a>
             <div class="dropdown-content">
-                <a href="#">Events</a>
-                <a href="#">Music</a>
-                <a href="#">Product</a>
+                <a href="#">FIELDS Sweater</a>
+                <a href="#">Nashville Barber Shops</a>
+                <a href="#">Pools</a>
             </div>
         </div>
 
@@ -50,73 +66,36 @@
     </div>
 
 
-
-
-    <div class="carousel-wrapper">
+    <div class="scroll-flex-wrapper">
 
 
 
-        <div class="carousel-container">
-            <div class="carousel">
+    <div class="scroll-container">
+        <!-- Your content goes here -->
+     
 
+        <img src="assets/overview/image-1.jpeg"><img >
+        <img src="assets/overview/image-2.jpeg"><img >
 
-            
-                <div class="carousel-slide">
-                    <img src="/assets/overview/image-1.jpeg">
-                    <!-- <img src="/assets/still/CWG2.jpeg"> -->
+        <img src="assets/overview/image-3.jpeg"><img >
 
-                </div>
-                <div class="carousel-slide">
-                    <img src="/assets/overview/image-2.jpeg">
-                    <!-- <img src="/assets/portraits/JessicaDiMento_DH-8.jpeg"> -->
+        <img src="assets/overview/image-4.jpeg"><img >
 
-                </div>
-                <div class="carousel-slide">
-                    <img src="/assets/overview/image-3.jpeg">
-                    <!-- <img src="/assets/travel/JDiMento_SpainFilm2023-117.jpeg"> -->
+        <img src="assets/overview/image-5.jpeg"><img >
+        <img src="assets/overview/image-6.jpeg"><img >
 
-                </div>
-                <div class="carousel-slide">
-                    <img src="/assets/overview/image-4.jpeg">
-                    <!-- <img src="/assets/still/ZeiselDivider_Black-7.jpeg"> -->
-
-                </div>
-
-                <div class="carousel-slide">
-
-                    <img src="/assets/overview/image-5.jpeg">
-
-        
-
-                </div>
-
-       
-
-             
 
 
         
 
-                <!-- Add more image slides here -->
 
 
-               
-             
+        
+        <!-- Add more content as needed -->
+      </div>
 
-
-
-
-            </div>
-            <button class="prev"></button>
-            <button class="next"></button>
-        </div>
-
-
-
-
-
-    </div>
-
+      
+</div>
 
 
 
@@ -138,6 +117,9 @@
 
 
     <script src="script.js"></script>
+
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
 
 
 
