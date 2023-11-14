@@ -1,54 +1,39 @@
-/* CAROUSEL */
 
-.carousel-wrapper {
-    /* margin-top: 5rem; */
+/* OPTION 2 FOR IPHONE PROTRAIT MEDIA QUERY */
 
-    display: flex;
-    align-items: center;
-    height: 100vh;
-    max-width: 100%;
 
+.scroll-container {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 80%;        
+  overflow-y: scroll; /* Enable vertical scrolling */
+  border: 1px solid #ccc; /* Add a border for visual clarity */
+  padding: 10px; /* Add padding if needed */
+}
+
+/* Styling for the custom scrollbar */
+.scroll-container::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: #888; /* Set the color of the scrollbar thumb */
+  border-radius: 5px; /* Optional: Add rounded corners to the thumb */
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Set the color of the scrollbar track */
+}
+
+/* Optional: Hover effect for the scrollbar thumb */
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
 }
 
 
-.carousel-container {
-    display: flex;
-    overflow: hidden;
-    position: relative;
-  }
+.scroll-container img {
+  max-height: 18rem;
+
   
-  .carousel {
-    display: flex;
-    transition: transform 0.5s;
-  }
-  
-  .carousel-slide {
-    flex: 0 0 calc(100% / 3); /* Display 3 images at a time; adjust for your preference */
-    padding: 5px; /* Add spacing between images */
-  }
-  
-  .carousel img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .prev, .next {
-    background: transparent;
-    color: rgba(0, 0, 0, 0.5); /* Change the color as needed */
-    font-size: 24px;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-  }
-  
-  .prev::before {
-    content: '\2039'; /* Plain ‹ symbol for "Previous" */
-  }
-  
-  .next::before {
-    content: '\203A'; /* Plain › symbol for "Next" */
-  }
-  
+}

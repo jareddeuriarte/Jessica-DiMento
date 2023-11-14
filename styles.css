@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@300&display=swap');
 
 
-
+/* BODIES */
 
 body {
     margin: 0;
@@ -10,7 +10,7 @@ body {
 
 }
 
-#super8-body{
+#super8-body {
     margin: 0;
     font-family: 'Roboto Slab', sans-serif;
     background-color: black;
@@ -171,6 +171,16 @@ body {
 
 /* LOGO */
 
+#name-link {
+    max-height: 3rem;
+}
+
+#prod-logo {
+    max-height: 1.5rem;
+
+
+}
+
 .link-container {
     z-index: 100;
     position: absolute;
@@ -208,7 +218,7 @@ a:hover {
 
 /* CAROUSEL */
 
-.scroll-flex-wrapper{
+.scroll-flex-wrapper {
     display: flex;
     justify-content: center;
     height: 100vh;
@@ -218,47 +228,46 @@ a:hover {
 
 /* Styling for the scrollable container */
 .scroll-container {
+    margin-top: 4rem;
     display: flex;
     width: 90%;
-    overflow-y: scroll; /* Enable vertical scrolling */
-    border: 1px solid #ccc; /* Add a border for visual clarity */
-    padding: 10px; /* Add padding if needed */
-  }
-  
-  /* Styling for the custom scrollbar */
-  .scroll-container::-webkit-scrollbar {
-    width: 10px; /* Set the width of the scrollbar */
-  }
-  
-  .scroll-container::-webkit-scrollbar-thumb {
-    background-color: #888; /* Set the color of the scrollbar thumb */
-    border-radius: 5px; /* Optional: Add rounded corners to the thumb */
-  }
-  
-  .scroll-container::-webkit-scrollbar-track {
-    background-color: #f1f1f1; /* Set the color of the scrollbar track */
-  }
-  
-  /* Optional: Hover effect for the scrollbar thumb */
-  .scroll-container::-webkit-scrollbar-thumb:hover {
+    overflow-x: scroll;
+    /* Enable vertical scrolling */
+    border: 1px solid #ccc;
+    /* Add a border for visual clarity */
+    padding: 10px;
+    /* Add padding if needed */
+}
+
+/* Styling for the custom scrollbar */
+.scroll-container::-webkit-scrollbar {
+    width: 10px;
+    /* Set the width of the scrollbar */
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    /* Set the color of the scrollbar thumb */
+    border-radius: 5px;
+    /* Optional: Add rounded corners to the thumb */
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    /* Set the color of the scrollbar track */
+}
+
+/* Optional: Hover effect for the scrollbar thumb */
+.scroll-container::-webkit-scrollbar-thumb:hover {
     background-color: #555;
-  }
+}
 
 
-  .scroll-container img {
+.scroll-container img {
     max-height: 30rem;
 
-    
-  }
-  
 
-
-
-  
-
-  
-
-
+}
 
 
 /* BIO */
@@ -306,7 +315,6 @@ a:hover {
 
 }
 
-
 /* PRODUCTION */
 
 .production-container {
@@ -319,8 +327,6 @@ a:hover {
 
 }
 
-
-
 .production-container p {
 
     font-family: 'Roboto Slab', sans-serif;
@@ -330,7 +336,6 @@ a:hover {
     text-align: center;
     line-height: 300%;
 }
-
 
 .production-container img {
     max-height: 8rem;
@@ -350,40 +355,19 @@ a:hover {
     margin-bottom: 7rem;
 }
 
-
 .portrait {
     max-height: 500rem;
 }
 
-/* carousel */
-
-
-
-.prev,
-.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-size: 24px;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
-
-.prev {
-    left: 0;
-}
-
-.next {
-    right: 0;
-}
 
 
 
 
-iframe{
+
+
+/* SUPER 8 */
+
+iframe {
     margin: 0%;
     width: 100%;
     height: 100vh;
@@ -402,12 +386,15 @@ iframe{
 /* Media Query for Phones in Portrait */
 @media only screen and (max-width: 500px) {
 
-    /* Image containers */
-    .container img {
-        max-width: 17rem;
-        background-color: white;
-        padding: 1rem;
+    
+
+    iframe {
+        margin: 0%;
+        width: 100%;
+        /* height: 100vh; */
+
     }
+
 
     /* BIO */
     .bio-container {
@@ -437,52 +424,181 @@ iframe{
     }
 
 
+    /* LINK CONTAINER */
+
+    .link-container {
+        z-index: 100;
+        position: absolute;
+        width: 100%;
+        margin-top: 1rem;
+        /* margin-left: 1rem; */
+        font-family: 'Roboto Slab', sans-serif;
+        color: #354F52;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .link-container>* {
+        padding: .5rem;
+    }
+
+    #name-link {
+        display: none;
+
+    }
+
+    #prod-logo {
+        max-height: 1rem;
+        padding: 0;
+        margin: 0;
+    }
 
 
 
-    /* Media Query for Tablets (768px to 1023px) */
-    @media only screen and (min-width: 768px) and (max-width: 1023px) {
-        /* Add your tablet-specific CSS styles here */
-
-        .container img {
-            max-width: 25rem;
-            background-color: white;
-            padding: 2rem;
-            /* height: auto; */
-        }
-
-        .bio-details p {
-            font-size: 60%;
-
-            text-align: justify;
+    /* PRODUCTION */
 
 
-        }
-
-        #jess {
-            padding: 1rem;
-            max-height: 11rem;
-
-        }
-
-        #logo {
-            max-height: 2.5rem;
-
-        }
+    .production-container img {
+        max-height: 4rem;
+    }
 
 
+    .production-container h3 {
+        font-family: 'Roboto Slab', sans-serif;
+        text-align: center;
+        font-size: 90%;
+    }
+
+
+    .production-container p {
+        font-family: 'Roboto Slab', sans-serif;
+        font-size: 50%;
+        text-align: center;
+        line-height: 300%;
+    }
+
+
+
+    /* SCROLL CONTAINER */
+
+}
+
+/* Phones in landscape */
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+
+
+    /* LINK CONTAINER */
+
+    .link-container {
+        z-index: 100;
+        position: absolute;
+        width: 100%;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        font-family: 'Roboto Slab', sans-serif;
+        color: #354F52;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .link-container>* {
+        padding: .5rem;
+    }
+
+    #name-link {
+        max-height: 2rem;
+        /* display: none; */
+
+    }
+
+    #prod-logo {
+        max-height: 1rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* PRODUCTION */
+
+
+    .production-container img {
+        max-height: 3rem;
+    }
+
+
+    .production-container h3 {
+        font-family: 'Roboto Slab', sans-serif;
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* Media Query for Tablets (768px to 1023px) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Add your tablet-specific CSS styles here */
+
+
+    .container img {
+        max-width: 25rem;
+        background-color: white;
+        padding: 2rem;
+        /* height: auto; */
+    }
+
+    .bio-details p {
+        font-size: 60%;
+
+        text-align: justify;
 
 
     }
 
-    /* Media Query for iPad Air in Landscape Mode (1024px to 1365px) */
-    @media only screen and (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
+    #jess {
+        padding: 1rem;
+        max-height: 11rem;
 
-        /* Add your CSS styles for iPad Air in landscape mode here */
-        .container img {
-            max-width: 27rem;
-            background-color: white;
-            padding: 2rem;
-            /* height: auto; */
-        }
     }
+
+    #logo {
+        max-height: 2.5rem;
+
+    }
+}
+
+
+
+
+
+
+/* Media Query for iPad Air in Landscape Mode (1024px to 1365px) */
+@media only screen and (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
+
+    /* Add your CSS styles for iPad Air in landscape mode here */
+    .container img {
+        max-width: 27rem;
+        background-color: white;
+        padding: 2rem;
+        /* height: auto; */
+    }
+}
