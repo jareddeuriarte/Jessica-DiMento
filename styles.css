@@ -216,7 +216,7 @@ a:hover {
 }
 
 
-/* CAROUSEL */
+/* SCROLL CONTAINER */
 
 .scroll-flex-wrapper {
     display: flex;
@@ -265,6 +265,7 @@ a:hover {
 
 .scroll-container img {
     max-height: 30rem;
+    padding: .5rem;
 
 
 }
@@ -530,6 +531,14 @@ iframe {
     .production-container h3 {
         font-family: 'Roboto Slab', sans-serif;
         text-align: center;
+    }
+
+
+    /* SCROLL CONTAINER */
+
+    .scroll-container img {
+        max-height: 15rem;
+        padding: 1rem;
     }
 
 
