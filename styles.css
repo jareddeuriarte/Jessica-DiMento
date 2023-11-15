@@ -169,7 +169,7 @@ body {
 
 /* OVERVIEW */
 
-/* LOGO */
+/* LINK CONTAINER */
 
 #name-link {
     max-height: 3rem;
@@ -182,8 +182,8 @@ body {
 }
 
 .link-container {
-    z-index: 100;
-    position: absolute;
+    /* z-index: 100;
+    position: absolute; */
     width: 100%;
     margin-top: 1rem;
     margin-left: 1rem;
@@ -221,7 +221,7 @@ a:hover {
 .scroll-flex-wrapper {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 80vh;
     align-items: center;
 
 }
@@ -387,6 +387,12 @@ iframe {
 /* Media Query for Phones in Portrait */
 @media only screen and (max-width: 500px) {
 
+
+
+
+
+    /* SUPER 8 */
+
     
 
     iframe {
@@ -428,8 +434,8 @@ iframe {
     /* LINK CONTAINER */
 
     .link-container {
-        z-index: 100;
-        position: absolute;
+        /* z-index: 100;
+        position: absolute; */
         width: 100%;
         margin-top: 1rem;
         /* margin-left: 1rem; */
@@ -492,8 +498,8 @@ iframe {
     /* LINK CONTAINER */
 
     .link-container {
-        z-index: 100;
-        position: absolute;
+        /* z-index: 100;
+        position: absolute; */
         width: 100%;
         margin-top: 1rem;
         margin-left: 1rem;
