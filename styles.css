@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@300;500&display=swap'); */
 
 
 /* BODIES */
@@ -378,6 +379,16 @@ a:hover {
     margin-bottom: 7rem;
 }
 
+
+
+.prod-link{
+    text-decoration: underline;
+    text-decoration-color: #A4C3B2;
+    text-decoration-thickness: 2px;
+
+
+}
+
 .portrait {
     max-height: 500rem;
 }
@@ -506,6 +517,9 @@ iframe {
         text-align: center;
         line-height: 300%;
     }
+
+
+ 
 
 
 
