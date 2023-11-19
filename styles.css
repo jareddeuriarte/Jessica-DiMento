@@ -22,14 +22,16 @@ body {
 /* DROP DOWN */
 
 
-button, input[type="submit"], input[type="reset"] {
-	background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+button,
+input[type="submit"],
+input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
 }
 
 
@@ -381,7 +383,7 @@ a:hover {
 
 
 
-.prod-link{
+.prod-link {
     text-decoration: underline;
     text-decoration-color: #A4C3B2;
     text-decoration-thickness: 2px;
@@ -409,34 +411,34 @@ iframe {
 }
 
 
-/* POOLS */
+/* PROJECTS */
 
 
-.project-details-container{
-    width:45%;
+.project-details-container {
+    width: 45%;
 
 }
 
-.project-details-container h2{
+.project-details-container h2 {
     text-align: center;
 
 }
 
 
 
-.project-details-container p{
+.project-details-container p {
     text-align: justify;
 
 }
 
 
-.project-wrapper{
+.project-wrapper {
     display: flex;
     justify-content: center;
 }
 
 
-.project-container{
+.project-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -445,9 +447,8 @@ iframe {
 
 
 
-.project-img-container{
-    display: flex;
-    flex-wrap: wrap;
+.project-img-container {
+    margin-top: 2rem;
     width: 75%;
 
 
@@ -455,10 +456,17 @@ iframe {
 
 
 
-.project-img-container img{
-    padding: 3rem;
-    max-height: 35rem;
-    
+.project-img-container img {
+    margin-left: .5rem;
+    margin-bottom: .5rem;
+    max-height: 30rem;
+
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 
@@ -472,17 +480,10 @@ iframe {
 
 
 
-/* Media Query for Phones in Portrait */
-@media only screen and (max-width: 500px) {
-
-
-
-
+/* Media Query for Phones and iPad mini in Portrait */
+@media only screen and (max-width: 800px) {
 
     /* SUPER 8 */
-
-    
-
     iframe {
         margin: 0%;
         width: 100%;
@@ -500,22 +501,15 @@ iframe {
         margin-top: 3rem;
         padding: 2rem;
         /* box-shadow: inset 0 0 10px #bdb9a2; */
-
-
-
     }
 
     .bio-details p {
         font-size: 81%;
         text-align: justify;
-
-
     }
 
     #jess {
         display: none;
-
-
     }
 
 
@@ -540,7 +534,6 @@ iframe {
 
     #name-link {
         display: none;
-
     }
 
     #prod-logo {
@@ -558,13 +551,11 @@ iframe {
         max-height: 4rem;
     }
 
-
     .production-container h3 {
         font-family: 'Roboto Slab', sans-serif;
         text-align: center;
         font-size: 90%;
     }
-
 
     .production-container p {
         font-family: 'Roboto Slab', sans-serif;
@@ -574,11 +565,60 @@ iframe {
     }
 
 
- 
+
+
+    /* PROJECTS */
+
+    .project-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .project-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
 
 
-    /* SCROLL CONTAINER */
+    .project-details-container {
+        font-size: smaller;
+        width: 75%;
+
+    }
+
+    .project-details-container h2 {
+        text-align: center;
+
+    }
+
+    .project-details-container p {
+        text-align: justify;
+
+    }
+
+
+    .project-img-container {
+        margin-top: 2rem;
+        width:100%;
+
+    }
+
+    .images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project-img-container img {
+        margin-left: .5rem;
+        margin-bottom: .5rem;
+        max-width: 17rem;
+
+    }
+
 
 }
 
@@ -640,6 +680,19 @@ iframe {
 
 
 
+    /* PROJECTS */
+
+    .project-img-container {
+        margin-top: 2rem;
+        display: flex;
+        width: 100%;
+    
+    
+    }
+    
+  
+
+
 
 
 
@@ -651,13 +704,6 @@ iframe {
 
 
 }
-
-
-
-
-
-
-
 
 
 /* Media Query for Tablets (768px to 1023px) */
@@ -691,10 +737,6 @@ iframe {
 
     }
 }
-
-
-
-
 
 
 /* Media Query for iPad Air in Landscape Mode (1024px to 1365px) */
