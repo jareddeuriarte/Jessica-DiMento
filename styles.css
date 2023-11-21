@@ -80,16 +80,6 @@ input[type="reset"] {
 }
 
 
-/* NEW */
-
-
-
-
-
-
-
-
-
 /* SPLASH */
 
 #splash-body {
@@ -253,7 +243,7 @@ a:hover {
 
 /* Styling for the scrollable container */
 .scroll-container {
-    margin-top: 4rem;
+    margin-top: 2rem;
     display: flex;
     width: 90%;
     overflow-x: scroll;
@@ -308,9 +298,7 @@ a:hover {
     align-items: center;
     margin-top: 3rem;
     padding: 2rem;
-
-
-
+    border: 1px solid #ccc;
 }
 
 .bio-details {
@@ -318,7 +306,6 @@ a:hover {
     flex-direction: column;
     align-items: flex-start;
     text-align: justify;
-
 }
 
 
@@ -326,19 +313,15 @@ a:hover {
     font-size: 80%;
     text-align: justify;
     line-height: 170%;
-
-
 }
 
 #jess {
     max-height: 25rem;
     margin-right: 1rem;
-
 }
 
 #logo {
     max-height: 2.5rem;
-
 }
 
 /* PRODUCTION */
@@ -348,16 +331,10 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
-
 }
 
 .production-container p {
-
     font-family: 'Roboto Slab', sans-serif;
-
-
     font-size: 80%;
     text-align: center;
     line-height: 300%;
@@ -620,6 +597,11 @@ iframe {
     }
 
 
+
+
+ 
+
+
 }
 
 /* Phones in landscape */
@@ -689,6 +671,8 @@ iframe {
     
     
     }
+
+ 
     
   
 
@@ -736,11 +720,12 @@ iframe {
         max-height: 2.5rem;
 
     }
+
 }
 
 
 /* Media Query for iPad Air in Landscape Mode (1024px to 1365px) */
-@media only screen and (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
+@media only screen and (min-width: 1024px) and (max-width: 1365px) {
 
     /* Add your CSS styles for iPad Air in landscape mode here */
     .container img {
@@ -749,4 +734,26 @@ iframe {
         padding: 2rem;
         /* height: auto; */
     }
+
+
+
+    .bio-container {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        margin-top: 3rem;
+        padding: 2rem;
+        border: 1px solid #ccc;
+    }
+
+
+
+
+
+
+
+
+
+
+
 }
