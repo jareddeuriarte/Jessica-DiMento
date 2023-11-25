@@ -54,13 +54,6 @@ body {
 
 
 
-
-
-
-
-
-
-
 /* DROP DOWN */
 
 
@@ -89,6 +82,9 @@ input[type="reset"] {
 .dropdown-button {
     color: #354F52;
     cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: #A4C3B2;
+    text-underline-offset: 0.5em;
 }
 
 /* Style the dropdown content (hidden by default) */
@@ -238,9 +234,9 @@ input[type="reset"] {
 
 }
 
+/* NAV CONTAINERS */
+
 .link-container {
-    /* z-index: 100;
-    position: absolute; */
     width: 100%;
     margin-top: 1rem;
     margin-left: 1rem;
@@ -248,11 +244,15 @@ input[type="reset"] {
     color: #354F52;
     display: flex;
     align-items: center;
+    text-decoration: underline;
+    text-decoration-color: #A4C3B2;
+    text-underline-offset: 0.5em;
+
 }
 
 
 .link-container>* {
-    padding: 2rem;
+    padding: 1rem;
 }
 
 a {
@@ -272,6 +272,28 @@ a:hover {
     font-size: 3rem;
     padding: 1rem;
 }
+
+
+.projects-link-container{
+    width: 100%;
+    font-family: 'Roboto Slab', sans-serif;
+    color: #354F52;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+    text-decoration-color: #A4C3B2;
+    text-underline-offset: 0.5em;
+}
+
+
+.projects-link-container>* {
+    padding: 2rem;
+}
+
+
+
+
 
 
 /* SCROLL CONTAINER */
@@ -503,6 +525,25 @@ iframe {
 /* Media Query for Phones and iPad mini in Portrait */
 @media only screen and (max-width: 800px) {
 
+
+
+    /* NAV CONTAINERS */
+
+
+
+    .projects-link-container>* {
+        padding: .5rem;
+    }
+
+
+
+    .projects-link-container a{
+        font-size: 81%;
+        color: inherit;
+        text-decoration: inherit;
+
+    }
+
     /* SUPER 8 */
     iframe {
         margin: 0%;
@@ -535,19 +576,10 @@ iframe {
 
     /* LINK CONTAINER */
 
-    .link-container {
-        font-size: 85%;
-        /* z-index: 100;
-        position: absolute; */
-        width: 100%;
-        margin-top: 1rem;
-        /* margin-left: 1rem; */
-        font-family: 'Roboto Slab', sans-serif;
-        color: #354F52;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
+
+
+
+
 
     .link-container>* {
         padding: .5rem;
@@ -562,6 +594,8 @@ iframe {
         padding: 0;
         margin: 0;
     }
+
+
 
 
 
@@ -736,7 +770,6 @@ iframe {
 
 /* Media Query for Tablets (768px to 1023px) */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    /* Add your tablet-specific CSS styles here */
 
 
     .container img {
