@@ -19,34 +19,7 @@ body {
 }
 
 
-/* TESTING */
 
-/* Basic CSS for the accordion menu */
-.accordion-btn {
-    width: 100%;
-    padding: 10px;
-    background-color: #f1f1f1;
-    border: none;
-    outline: none;
-    text-align: left;
-    cursor: pointer;
-  }
-  
-  .panel {
-    display: none;
-  }
-  
-  .panel a {
-    display: block;
-    padding: 8px 16px;
-    text-decoration: none;
-    color: #333;
-  }
-  
-  /* Show panel when button is clicked */
-  .active + .panel {
-    display: block;
-  }
   
 
 
@@ -271,6 +244,15 @@ a:hover {
     color:#A4C3B2;
     font-size: 3rem;
     padding: 1rem;
+}
+
+
+.back-hidden{
+    color:#A4C3B2;
+    font-size: 3rem;
+    padding: 1rem;
+    display: none;
+
 }
 
 
@@ -537,14 +519,21 @@ iframe {
 
 
 
-    /* NAV CONTAINERS */
+    /* NAV and LINK CONTAINERS */
 
+
+    .back-hidden{
+        color:#A4C3B2;
+        font-size: 2rem;
+        padding: 1rem;
+        display: block;
+    
+    }
 
 
     .projects-link-container>* {
         padding: .5rem;
     }
-
 
 
     .projects-link-container a{
@@ -553,6 +542,39 @@ iframe {
         text-decoration: inherit;
 
     }
+
+
+    .link-container {
+        width: 100%;
+        margin-top: 0;
+        margin-left: 0;
+        font-family: 'Roboto Slab', sans-serif;
+        color: #354F52;
+        display: flex;
+        align-items: center;
+        text-decoration: underline;
+        text-decoration-color: #A4C3B2;
+        text-underline-offset: 0.5em;
+    
+    }
+
+
+    .link-container>* {
+        padding: .5rem;
+    }
+
+    #name-link {
+        display: none;
+    }
+
+    #prod-logo {
+        max-height: 1rem;
+        padding: 0;
+        margin: 0;
+    }
+
+
+
 
     /* SUPER 8 */
     iframe {
@@ -582,30 +604,6 @@ iframe {
     #jess {
         display: none;
     }
-
-
-    /* LINK CONTAINER */
-
-
-
-
-
-
-    .link-container>* {
-        padding: .5rem;
-    }
-
-    #name-link {
-        display: none;
-    }
-
-    #prod-logo {
-        max-height: 1rem;
-        padding: 0;
-        margin: 0;
-    }
-
-
 
 
 
@@ -702,13 +700,10 @@ iframe {
         /* z-index: 100;
         position: absolute; */
         width: 100%;
-        margin-top: 1rem;
-        margin-left: 1rem;
         font-family: 'Roboto Slab', sans-serif;
         color: #354F52;
         display: flex;
-        flex-direction: column;
-        align-items: start;
+        align-items: center;
     }
 
     .link-container>* {
